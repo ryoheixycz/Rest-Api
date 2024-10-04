@@ -1,20 +1,21 @@
 {
   "name": "ajiro-api",
   "version": "1.0.0",
-  "description": "An API system for Ajiro",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": ["api", "ajiro", "express", "tiktok"],
+  "keywords": [],
   "author": "Wataru Ajiro",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^18.0.6",
-    "axios": "^1.6.8",
+    "axios": "^1.7.7",  // Updated axios version
     "betabotz-tools": "^0.0.7",
     "cheerio": "^1.0.0-rc.12",
-    "express": "^4.19.2",
+    "dotenv": "^16.4.5",  // Updated dotenv version
+    "express": "^4.21.0",  // Updated express version
     "fs": "^0.0.1-security",
     "fs-extra": "^11.2.0",
     "g4f": "^1.4.3",
@@ -22,8 +23,6 @@
     "path": "^0.12.7",
     "request": "^2.88.2",
     "unlimited-ai": "^2.0.1",
-    "useragent": "^2.3.0",
-    "ytdl-core": "^4.11.0", 
-    "puppeteer": "^20.8.0"  // Puppeteer for TikTok scraping if necessary
+    "useragent": "^2.3.0"
   }
 }
