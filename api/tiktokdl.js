@@ -24,17 +24,16 @@ exports.downloadTikTokVideo = async (req, res) => {
     }
 
     try {
-        const response = await axios.post(
-            process.env.TIKTOK_API_URL,
-            new URLSearchParams({
-                id: url,
-                locale: "en",
-                tt: "RHJHcms_",
-            }).toString(),
+        const response = await axios.get(
+            process.env.TIKTOK_API_URL, // Assuming this is the correct endpoint for GET requests
             {
+                params: {
+                    id: url,
+                    locale: "en",
+                    tt: "RHJHcms_",
+                },
                 headers: {
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0",
-                    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
                 },
             }
         );
@@ -95,4 +94,3 @@ exports.downloadTikTokVideo = async (req, res) => {
         });
     }
 };
-          
