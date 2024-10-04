@@ -11,11 +11,11 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^18.0.6",
-    "axios": "^1.7.7",  
+    "axios": "^1.7.7",
     "betabotz-tools": "^0.0.7",
     "cheerio": "^1.0.0-rc.12",
-    "dotenv": "^16.4.5",  
-    "express": "^4.21.0",  
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
     "fs": "^0.0.1-security",
     "fs-extra": "^11.2.0",
     "g4f": "^1.4.3",
@@ -23,6 +23,7 @@
     "path": "^0.12.7",
     "request": "^2.88.2",
     "unlimited-ai": "^2.0.1",
-    "useragent": "^2.3.0"
+    "useragent": "^2.3.0",
+    "tiktokapi-src": "^1.2.0"  // Added tiktokapi-src dependency
   }
 }
