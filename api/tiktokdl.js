@@ -15,7 +15,8 @@ exports.initialize = async function ({ req, res }) {
     if (!url) {
         return res.status(400).json({
             status: 'error',
-            message: 'URL parameter is required'
+            message: 'URL parameter is required',
+            result: null
         });
     }
 
@@ -45,21 +46,20 @@ exports.initialize = async function ({ req, res }) {
                 }
             });
         } else {
-            // Handle case where the API returns an error status
+            // Handle API errors with a more descriptive message
             res.json({
                 status: 'error',
-                message: result.message || 'Failed to fetch the video',
+                message: result.message || 'Failed to retrieve video details. Please check the URL.',
                 result: null
             });
         }
     } catch (error) {
-        // Error handling with logging
+        // Enhanced error handling
         console.error('Error:', error.message);
         res.json({
             status: 'error',
-            message: 'Internal Server Error',
+            message: 'Internal Server Error. Unable to process the request at this time.',
             result: null
         });
     }
 };
-            
