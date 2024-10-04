@@ -11,11 +11,11 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^18.0.6",
-    "axios": "^1.7.7",  // Updated axios version
+    "axios": "^1.7.7",  
     "betabotz-tools": "^0.0.7",
     "cheerio": "^1.0.0-rc.12",
-    "dotenv": "^16.4.5",  // Updated dotenv version
-    "express": "^4.21.0",  // Updated express version
+    "dotenv": "^16.4.5",  
+    "express": "^4.21.0",  
     "fs": "^0.0.1-security",
     "fs-extra": "^11.2.0",
     "g4f": "^1.4.3",
