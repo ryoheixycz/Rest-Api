@@ -1,12 +1,12 @@
 {
   "name": "ajiro-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "An API system for Ajiro",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": [],
+  "keywords": ["api", "ajiro", "express", "tiktok"],
   "author": "Wataru Ajiro",
   "license": "ISC",
   "dependencies": {
@@ -22,6 +22,8 @@
     "path": "^0.12.7",
     "request": "^2.88.2",
     "unlimited-ai": "^2.0.1",
-    "useragent": "^2.3.0"
+    "useragent": "^2.3.0",
+    "ytdl-core": "^4.11.0", 
+    "puppeteer": "^20.8.0"  // Puppeteer for TikTok scraping if necessary
   }
 }
